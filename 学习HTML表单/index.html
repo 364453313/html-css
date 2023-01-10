@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>登记表</title>
+</head>
+<body>
+    <h1>登记表</h1>
+    <p>请填写此表格</p>
+    <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="firs-tname">
+                输入您的名字：
+                <input name="fist-name" id="first-name" type="text" required>
+            </label>
+            <label for="last-name">
+                输入您的性氏：
+                <input name="last-name" id="last-name" type="text" required>
+            </label>
+            <label for="user-email">
+                输入您的邮箱：
+                <input name="user-email" id="user-email" type="email" required>
+            </label>
+            <label for="new-post">
+                创建新的密码：
+                <input name="new-post" id="new-post" type="password" pattern="[0-5a-z]{8,}" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account">
+                <input name="account-type" id="personal-account" class="inline" type="radio">
+                个人账户
+            </label>
+            <label for="business-account">
+                <input name="account-type" id="business-account" class="inline" type="radio">
+                企业账户
+            </label>
+            <label for="terms-and-conditions" name="terms-and-conditions">
+                <input id="terms-and-conditions" name="terms-and-conditions" class="inline" type="checkbox">
+                我接收这些<a href="#">条款和条件</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="">
+                上传一个人资料图片：
+                <input name="file" type="file">
+            </label>
+            <label for="age">
+                输入年龄（年）：
+                <input name="age" id="age" type="number" max="100" min="13">
+            </label>
+            <label for="">您是怎么知道我们的？
+                <select name="referrer" id="referrer">
+                    <option value="">选择一个</option>
+                    <option value="1">官方新闻</option>
+                    <option value="2">油管频道</option>
+                    <option value="3">官方论坛</option>
+                    <option value="4">其他</option>
+                </select>
+            </label>
+            <label for="bio">
+                提供个人简介：
+                <textarea name="bio" id="bio" cols="30" rows="3" place></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>关于学习的调查问卷</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">关于学习的调查问卷</h1>
+        <p id="description">感谢您的参与</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-message">
+            <label id="name-label" for="name">
+                名字：
+                <input class="habit" id="name" type="text" placeholder="名字" required>
+            </label>
+            <label id="email-label" for="email">
+                邮箱：
+                <input id="email" type="email" placeholder="邮箱" required>
+            </label>
+            <label id="number-label" for="number">
+                年龄（可选）：
+                <input id="number" type="number" min="13" max="60" placeholder="年龄">
+            </label>
+        </div>
+        <div class="form-occupation">
+            <label>
+                您当前的职业？
+                <select id="dropdown">
+                    <option value="">选择一个</option>
+                    <option value="1">学生</option>
+                    <option value="2">上班</option>
+                    <option value="3">其他</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-habit">
+            <p>你有学习的习惯吗？</p>
+            <label>
+                <input name="habit" type="radio" value="often" checked>
+                经常
+            </label>
+            <label>
+                <input name="habit" type="radio" value="sometimes">
+                偶尔
+            </label>
+            <label>
+                <input name="habit" type="radio" value="never">
+                从不
+            </label>
+        </div>
+        <div class="form-learn">
+            <p>你有哪些学习方式？</p>
+            <label>
+                <input name="learn-style" type="checkbox" value="书本学习">
+                书本学习
+            </label>
+            <label>
+                <input name="learn-style" type="checkbox" value="视频学习">
+                视频学习
+            </label>
+            <label>
+                <input name="learn-style" type="checkbox" value="动手实践">
+                动手实践
+            </label>
+            <label>
+                <input name="learn-style" type="checkbox" value="与他人交流">
+                与他人交流
+            </label>
+        </div>
+        <div class="form-bio">
+            <label for="bio">
+                <textarea name="bio" id="bio" cols="30" rows="5" placeholder="关于学习，我。。。"></textarea>
+            </label>
+            <div class="form-group">
+                <label>
+                    <button id="submit" type="submit">提交</button>
+                </label>
+            </div>
+    </form>
+</body>
+
+</html>
